@@ -36,19 +36,22 @@
 			  <li><a href="Anuradhapura.html">Anuradhapura</a></li>
             </ul>
           </li>
+		  
          <li class="current"><a href=" Search.html">Offers</a></li>
-          <li class="current"><a href="signup.html">Sign up</a>
+          <li class="current"><a href="signup.html">Sign up</a></li>
           <li class="current"><a href="login.html">Log in</a></li>
         </ul>
-      </nav>
-      <div class="clear"></div>
-    </div>
+     
+       
+    
     <div class="clear"></div>
+	</nav>
+ 
+  </div>
   </div>
 </header>
  
-    </div>
-  </div>
+ 
  
   
   
@@ -56,26 +59,28 @@
       
     <h1 style="font-size:200%; position: center;   margin-left: 600px;">Sign Up</h1>
       <p style="font-size:160%;"> Please proceed to create an account.</p>
-      <hr>
+      
 	   <div class="imgcontainer">
     <img src="images/signup.jpg" alt="Avatar" class="avatar">
   </div>
   <form action="insert.php" method="POST">
+  
   <label><b>First name</b></label>
-      <input type="text" placeholder="Enter first name" name="f name" required>
+      <input type="text" placeholder="Enter first name" name="fname" required>
 	  <label><b>Last name</b></label>
-      <input type="text" placeholder="Enter last name" name="l name" required>
+      <input type="text" placeholder="Enter last name" name="lname" required>
 	  <label><b>age</b></label>
       <input type="text" placeholder="Enter age" name="age" required>
 	  <label><b>Gender</b></label>
-      <input type="radio" placeholder="Enter gender" name="gender"  value="m" required> Male   
-	   <input type="radio" placeholder="Enter gender" name="gender"  value="f" required> Female   
-	  </label>
+      <input type="radio" placeholder="Enter gender" name="gender"  value="m" required> Male 
+      <label><b>Gender</b></label>	  
+	  <input type="radio" placeholder="Enter gender" name="gender"  value="f" required> Female <br>
+	 
 	  <label><b>Phone no</b></label>
-      <input type="phone" placeholder="Enter phone" name="phone" required>
+      <input type="phone" placeholder="Enter phone" name="phone" required><br>
 	  
       <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
 
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
@@ -89,14 +94,11 @@
 
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-      <div class="clearfix">
+      
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
-</div>
-</div>
+       </form>
+	  </div>
 
 </body>
 </html>
