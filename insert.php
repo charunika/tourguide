@@ -1,4 +1,4 @@
-<? php
+<?php
 $firstname=$_POST['fname'];
 $lastname=$_POST['lname'];
 $age=$_POST['age'];
@@ -8,7 +8,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empty($phone)||!empty($email)||!empty($password)){
-	$host="local host";
+	$host="localhost";
 	$dbUsername="root";
 	$dbPassword="";
 	$dbname="guides";
@@ -19,7 +19,7 @@ if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empt
 	}
 	else{
 		$SELECT= "SELECT email From register Where email=? Limit 1";
-		$INSERT ="INSERT Into register(fname,lname,age,gender,phone,email,password) values(?,?,?,?,?,?,?)";
+		$INSERT ="INSERT Into register(fname,lname,age,gender,phone,email,password) VALUES(?,?,?,?,?,?,?)";
 		
 		$stmt=$conn->prepare($SELECT);
 		$stmt->bind_param("s",$email);
@@ -32,7 +32,7 @@ if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empt
 		{
 			$stmt->	close();
     $stmt= $conn->prepare($INSERT);
-    $stmt->bind_param("ssssii",$firstname,$lastname,$age,$gender,$phone,$email,$password);
+    $stmt->bind_param("ssisiss",$firstname,$lastname,$age,$gender,$phone,$email,$password);
     $stmt-> execute();
 echo "New record is inserted successfully";
 		}
@@ -40,7 +40,7 @@ echo "New record is inserted successfully";
 			echo "someone already register using this email";
 		}
 		$stmt->close();
-		$stmt->close();
+		 
 	}
 
 } else{
