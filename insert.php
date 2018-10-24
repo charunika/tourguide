@@ -1,13 +1,14 @@
 <?php
 $firstname=$_POST['fname'];
 $lastname=$_POST['lname'];
-$age=$_POST['age'];
+$dob=$_POST['birth'];
 $gender=$_POST['gender'];
+$area=$_POST['area'];
 $phone=$_POST['phone'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
-if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empty($phone)||!empty($email)||!empty($password)){
+if(!empty($firstname)||!empty($lastname)|| !empty($dob)||!empty($gender) ||!empty($area)|| !empty($phone)||!empty($email)||!empty($password)){
 	$host="localhost";
 	$dbUsername="root";
 	$dbPassword="";
@@ -18,8 +19,8 @@ if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empt
 		die('Connect Error('. mysqli_connect_errno().')'.mysqli_connect_error());
 	}
 	else{
-		$SELECT= "SELECT email From register Where email=? Limit 1";
-		$INSERT ="INSERT Into register(fname,lname,age,gender,phone,email,password) VALUES(?,?,?,?,?,?,?)";
+		$SELECT= "SELECT email From registers Where email=? Limit 1";
+		$INSERT ="INSERT Into registers(fname,lname,birth,gender,area,phone,email,password) VALUES(?,?,?,?,?,?,?,?)";
 		
 		$stmt=$conn->prepare($SELECT);
 		$stmt->bind_param("s",$email);
@@ -32,7 +33,7 @@ if(!empty($firstname)||!empty($lastname)|| !empty($age)||!empty($gender)|| !empt
 		{
 			$stmt->	close();
     $stmt= $conn->prepare($INSERT);
-    $stmt->bind_param("ssisiss",$firstname,$lastname,$age,$gender,$phone,$email,$password);
+    $stmt->bind_param("sssssiss",$firstname,$lastname,$dob,$gender,$area,$phone,$email,$password);
     $stmt-> execute();
 echo "New record is inserted successfully";
 		}
@@ -46,5 +47,7 @@ echo "New record is inserted successfully";
 } else{
 	echo" All fields are required";
 	die();
+	
 }
+
 ?>
