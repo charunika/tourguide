@@ -91,12 +91,28 @@
 	   <label><b>Gender</b></label>
       <input type="radio" placeholder="Enter gender" name="gender"  value="m" required> Male 
       <input type="radio" placeholder="Enter gender" name="gender"  value="f" required> Female <br><br>
-	  
-	   <label><b>Area</b></label>
-    <input type="text" placeholder="Enter area" name="area" required pattern="[a-zA-Z]+$" title="name should include only lower or uppercase letters">
+	
+                <label><b>Area</b></label>
+                <select name="area">
+                
+                                 
+                                  <option value= "Colombo">Colombo</option>
+                                  <option value="Kandy">Kandy</option>
+                                  <option value="Galle">Galle</option> 
+                                  <option value=Kurunegala">Kurunegala</option>
+                                  <option value="Jaffna">Jaffna</option>                              
+              </select><br><br>
 
 	  <label><b>Phone no</b></label>
-	  <input type="phone" placeholder="Enter phone" name="phone" required pattern="^\d{10}$" title="ten digit phone number required"><br><br>
+      <select name="pcode">
+                
+                                  <option  value="077" >077</option>
+                                  <option value= "071">071</option>
+                                  <option value="076">076</option>
+                                  <option value="072">072</option> 
+                                                               
+              </select>
+	  <input type="phone" placeholder="Enter phone" name="phone" required><br><br>
 	  
  
       <label><b>Email</b></label>
