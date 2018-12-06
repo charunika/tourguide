@@ -3,19 +3,69 @@
 <head>
 <title></title>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <style >
-
-  .b{
+.a{
+background-color:  #F5F5F5;
+}
+.b{
     background-color: black;
   }
 .heads{
-  background-color: blue; 
+  background-color:  #FFFFF0; 
 }
 .head{
-  background-color:  red;
+  background-color:  #FFFFF0;
+   text-align: center;
+    font-size: 25px;
+    color:  #FF6347;
+    font-weight: bold;
+ font-family: "Times New Roman", Times, serif;
+
+
+}
+.head2{
+  background-color: #ADD8E6;
+}
+
+.head3{
+  background-color:  #F5F5F5;
+}
+ 
+ 
+.head41{
+  background-color: white;
+   border: 25px ;
+     height: 200px;
+    width: 200px;
+    padding: 100px;
+    margin:100px;
+}
+
+
+.my_padding{
+   padding-top: 10px;
+   
+    }
+.image_padding{
+  padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px
+   
+    }
+.my_pad{
+   padding-top: 50px;
+    
+    
+}
+.my_margin{
+   margin-top: 10px;
+    
+}
+.img_margin{
+   margin-top: 0px;
+    margin-bottom: 10px;
+
 }
 
 
@@ -23,25 +73,107 @@
 </head>
 <body>
 
-  <div class ="container">
-    <div class ="row" "col-md-12" >
-      <div class = "head" ".col-md-8">
-        <p> Name of the site</p>
-      </div>
-       <div class = "heads" .col-md-4>
-        <a href="#" class="b ">Primary</a>
-          <a href="#" class="b ">Secondary</a>
-             <a href="#" class="b ">Danger</a>
+  <div class="a" >
+    <div class ="row" >
+      <div class = "head col-md-6   my_padding">
+        <p> Show around</p>
+       </div>
+        <div class = "heads col-md-6  my_padding">
+          <nav class="navbar navbar-expand-lg ">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meet a local
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Blog</a>
+          <a class="dropdown-item" href="#">About Us</a>
+        
+        </div>
+      </li>
+        <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us </a>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-danger">Connect</button>
+        
+         <button type="button" class="btn btn-warning">Sign up as a local</button> 
+      </li>
+      
+    </ul>
+  </div>
+</nav>
          </div>
        </div>
       
-     <div class ="row" >
-         <div class = "head2" >
+    <div class ="row " >
+      <div class = "head2 col-md-4" >
+       <p>hhhhhhhhhhh</p>
+    </div> 
+        <div class = "head2 col-md-4 my_pad " >
+      <form class="form-inline ">
+      <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+       </form>
+   </div>
+         <div class = "head2 col-md-4" >
+    </div>
+  </div>
 
+ <div class ="row " >
+     <div class = "head3 col-md-3" >
+      </div>
+       <div class = "head3 col-md-9 my_margin" >
+          <p>Discover a deeper insight into a new city with one of 102112 Showaround locals</p>
+             </div>
+             
+           </div>
 
-
-         </div>
+  <div class ="row " >
+     <div class = "head4 col-md-4 my_margin image_padding" >
+        <div class = "head41  img_margin image_padding " >
+               <div class = "head411 col-md-4  img_margin image_padding" >
+             <img src="images/home.png" alt="Smiley face" >
+             <p>fsfgdgdgd</p>
+          </div>
+           <div class = "head411 col-md-4  img_margin image_padding" >
+             <img src="images/home.png" alt="Smiley face" >
+             <p>fsfgdgdgd</p>
+          </div>
        </div>
+       </div>   
+  <div class = "head4 col-md-4 my_margin image_padding" >
+          <div class = "head41 img_margin image_padding" >
+             <img src="images/home.png" alt="Smiley face" >
+             <p>fsfgdgdgd</p>
+          </div>
+       </div> 
+  
+      </div>
+ 
+<div class ="row " >
+ <div class = "head5 col-md-4 my_margin image_padding" >
+  <div class = "head41  my_margin image_padding" >
+     <img src="images/home.png" alt="Smiley face" height="42" width="42">
+     <p>fsfgdgdgd</p>
+  </div>
+</div>
+<div class = "head5 col-md-4 my_margin image_padding" >
+  <div class = "head41 my_margin image_padding" >
+     <img src="images/home.png" alt="Smiley face" height="42" width="42">
+     <p>fsfgdgdgd</p>
+  </div>
+</div>
+</div>
+
 </div>
 
 
@@ -75,6 +207,9 @@
 
 
 
-   
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
