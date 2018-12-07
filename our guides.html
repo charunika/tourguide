@@ -10,6 +10,12 @@ background-color:  #F5F5F5;
 .b{
     background-color: black;
   }
+ .green{
+   background-color: white;
+ }
+ .red{
+   background-color: red;
+ }
 .heads{
   background-color:  #FFFFF0; 
 }
@@ -48,9 +54,9 @@ background-color:  #F5F5F5;
     }
 .image_padding{
   padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px
+    padding-right: 200px;
+    padding-bottom: 10px;
+    padding-left: 20px
    
     }
 .my_pad{
@@ -94,21 +100,19 @@ background-color:  #F5F5F5;
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Blog</a>
           <a class="dropdown-item" href="#">About Us</a>
-        
         </div>
       </li>
-        <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us </a>
-      </li>
+        
+       <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+        </li>
+           <li class="nav-item">
+       <a class="nav-link" href="#">About Us </a>
+       </li>
       <li class="nav-item">
         <button type="button" class="btn btn-danger">Connect</button>
-        
-         <button type="button" class="btn btn-warning">Sign up as a local</button> 
+        <button type="button" class="btn btn-warning">Sign up as a local</button> 
       </li>
-      
-    </ul>
+      </ul>
   </div>
 </nav>
          </div>
@@ -137,42 +141,71 @@ background-color:  #F5F5F5;
              
            </div>
 
-  <div class ="row " >
-     <div class = "head4 col-md-4 my_margin image_padding" >
-        <div class = "head41  img_margin image_padding " >
-               <div class = "head411 col-md-4  img_margin image_padding" >
-             <img src="images/home.png" alt="Smiley face" >
-             <p>fsfgdgdgd</p>
-          </div>
-           <div class = "head411 col-md-4  img_margin image_padding" >
-             <img src="images/home.png" alt="Smiley face" >
-             <p>fsfgdgdgd</p>
-          </div>
-       </div>
-       </div>   
-  <div class = "head4 col-md-4 my_margin image_padding" >
-          <div class = "head41 img_margin image_padding" >
-             <img src="images/home.png" alt="Smiley face" >
-             <p>fsfgdgdgd</p>
-          </div>
-       </div> 
-  
-      </div>
+ 
  
 <div class ="row " >
- <div class = "head5 col-md-4 my_margin image_padding" >
-  <div class = "head41  my_margin image_padding" >
-     <img src="images/home.png" alt="Smiley face" height="42" width="42">
-     <p>fsfgdgdgd</p>
+ <div class = "head5 col-md-1 green" >
   </div>
-</div>
-<div class = "head5 col-md-4 my_margin image_padding" >
-  <div class = "head41 my_margin image_padding" >
-     <img src="images/home.png" alt="Smiley face" height="42" width="42">
-     <p>fsfgdgdgd</p>
+    <div class = "head5 col-md-1 green image_padding" >
+     <img src="images/a.jpg" alt="Smiley face" height="150" width="150">
+    </div>
+      <div class = "head5 col-md-2 green image_padding_padding" >
+       <div class="Guides-column">
+        <sa-guide-list-item guide="::guide" class="ng-isolate-scope"><a class="Guide" ng-class="::$ctrl.guide.$cssClass" ui-sref="guides.guide({ guideId: ($ctrl.guide | guideSlug) })" href="/locals/menuka-colombo-sri-lanka-9714118">
+  
+
+  <div class="Guide-details ">
+    <div class="Guide-namecard">
+      <p class="Guide-name ng-binding">Menuka</p>
+      <p class="Guide-location ng-binding">
+        <span class="Guide-location-marker">
+          <i class="Icon Icon-marker"></i>&nbsp;
+        </span>
+        Colombo, Sri Lanka
+      </p>
+      <span class="Guide-price ng-binding" data-ng-bind-html="::$ctrl.guide.priceInfo | guidePrice:true"><strong>Free</strong></span>
+    </div>
+
+    <div class="Guide-motto">
+      <span class="Guide-motto-quote Guide-motto-quote--left"><i class="Icon Icon-quoteLeft"></i></span>
+      <span class="Guide-motto-quote Guide-motto-quote--right"><i class="Icon Icon-quoteRight"></i></span>
+      <div class="Guide-motto-content" sa-ellipsis-container="">
+        <p sa-ellipsis="" ng-bind="::$ctrl.guide.shortDescription" class="ng-binding ng-isolate-scope">I will show you how wonderful the Colombo city is.</p>
+      </div>
+    </div>
+
+    <div class="Guide-stats">
+      <div class="Guide-stat">
+        <p class="Guide-stat-label">Reviews</p>
+        <div class="Guide-stat-value">
+          <hr><!-- ngIf: ::$ctrl.guide.reviewCount --><strong ng-if="::$ctrl.guide.reviewCount" class="ng-binding ng-scope">4</strong><!-- end ngIf: ::$ctrl.guide.reviewCount -->
+        </div>
+      </div>
+
+      <div class="Guide-stat">
+        <p class="Guide-stat-label">Rating</p>
+        <p class="Guide-stat-value Rating--small Rating ng-isolate-scope" rating="::$ctrl.guide.avgRating">
+  <!-- ngRepeat: star in ::stars --><i class="Icon Icon-star ng-scope is-highlighted" ng-class="{ 'is-highlighted': star <= rating }" ng-repeat="star in ::stars"></i><!-- end ngRepeat: star in ::stars --><i class="Icon Icon-star ng-scope is-highlighted" ng-class="{ 'is-highlighted': star <= rating }" ng-repeat="star in ::stars"></i><!-- end ngRepeat: star in ::stars --><i class="Icon Icon-star ng-scope is-highlighted" ng-class="{ 'is-highlighted': star <= rating }" ng-repeat="star in ::stars"></i><!-- end ngRepeat: star in ::stars --><i class="Icon Icon-star ng-scope is-highlighted" ng-class="{ 'is-highlighted': star <= rating }" ng-repeat="star in ::stars"></i><!-- end ngRepeat: star in ::stars --><i class="Icon Icon-star ng-scope is-highlighted" ng-class="{ 'is-highlighted': star <= rating }" ng-repeat="star in ::stars"></i><!-- end ngRepeat: star in ::stars -->
+</p>
+      </div>
+    </div>
   </div>
-</div>
-</div>
+</a>
+</sa-guide-list-item>
+      </div>
+ </div>
+ 
+ <div class = "head5 col-md-2  green" >
+ </div>
+ <div class = "head5 col-md-1 red"" >
+ </div>
+ <div class = "head5 col-md-2  green" >
+ </div>
+ <div class = "head5 col-md-2 red"" >
+ </div>
+ <div class = "head5 col-md-1 green" >
+ </div>
+ 
 
 </div>
 
@@ -183,12 +216,13 @@ background-color:  #F5F5F5;
 
 
 
+ <div class = "head41  my_margin image_padding" >
+    
 
 
 
-
-
-
+</div>
+</div>
 
 
 
