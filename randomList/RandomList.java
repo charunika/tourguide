@@ -11,24 +11,26 @@ package randomlist;
  */
 public class List2 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         
-        /** List<List2> l = new ArrayList<>();*/
-         
-       for (int i = 1; i < 100; i++) {
-        
-        String n="xyz";
-        Random r= new Random();
-        String name=n+r.nextInt(i);
        
-        System.out.println(name+i);
+         for (int i = 1; i < 10; i++) {
+       
+        String n="";
+        Random r= new Random();
+        char[] x = ("" + r.nextInt(i)).toCharArray();
+         
+        int age = r.nextInt(50);
+        int val =r.nextInt(i);
+       String name;
+       name = n+ (x+Integer.toString(val)) ;
+        System.out.println(name+","+age);
+        
     }
         
     }
 
+}
 
 
 }
