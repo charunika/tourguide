@@ -1,0 +1,20 @@
+ 
+package randomint;
+import java.util.*;
+/**
+ *
+ * @author CHARU
+ */
+public class Randomint {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Random r = new Random();
+        int x = r.nextInt(100)+100;
+        System.out.print(x);
+        
+    }
+    
+}
