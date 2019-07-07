@@ -1,0 +1,26 @@
+public class RandomList {
+ 
+    /**
+     * @param args the command line arguments
+     */ 
+   
+    public static void main(String[] args) {
+      //StringBuilder s= new StringBuilder();
+        Random r= new Random();
+    int max=90;
+    int min= 65;
+    
+        Character c,d,e;
+        c = (char)(r.nextInt(max-min)+min);
+        d= (char)(r.nextInt(max-min)+min);
+        e= (char)(r.nextInt(max-min)+min);
+        String x= Character.toString(c)+ Character.toString(d)+ Character.toString(e);
+         int y =r.nextInt(100)+100;
+        
+          System.out.print(x+Integer.toString(y));
+        
+         
+    
+    
+}
+}
