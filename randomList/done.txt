@@ -16,16 +16,14 @@ public class RandomList {
         Random r= new Random();
         int max=90;
         int min= 65;
-      for (int i=r. nextInt(10); 10>i ;i++){
+    for (int i=r. nextInt(10-5); 10>i ;i++){
       
         Character c;
         c = (char)(r.nextInt(max-min)+min);
         String x= Character.toString(c);
-         
-        
-       System.out.print(x);
-    }   
-        int y= r. nextInt(10);
+        System.out.print(x);
+   }   
+          int y= r. nextInt(10);
           String x1="";
           System.out.println(x1+Integer.toString(y));
     
